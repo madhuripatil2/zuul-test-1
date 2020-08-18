@@ -74,7 +74,7 @@
     start:
       github:
         status: 'pending'
-        status-url: "http://localhost:9000/t/quickstart/status"
+        status-url: 
         comment: false
     success:
       github:
