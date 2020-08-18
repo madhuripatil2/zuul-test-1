@@ -1,0 +1,16 @@
+zookeeper-servers:
+  - host: localhost
+
+labels:
+  - name: ubuntu-bionic
+
+providers:
+  - name: static-vms
+    driver: static
+    pools:
+      - name: main
+        nodes:
+        - name: <public ip by VM >
+          labels: ubuntu-bionic
+          host-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5iuytuICGvd8hQExS/f8DdEt6R8Vs5s4XbpzoX+Adbe8Sxu7jr"
+          username: <private username>
