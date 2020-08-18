@@ -9,5 +9,3 @@
     gate:
       jobs:
         - testjob
-        
-		
