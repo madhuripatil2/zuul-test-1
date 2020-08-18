@@ -1,0 +1,12 @@
+- tenant:
+    name: quickstart
+    report-build-page: true
+    source:
+            # zuul-git:
+            #config-projects:
+            # - zuul/zuul-base-jobs
+            # untrusted-projects:
+            # - zuul/zuul-jobs
+      github:
+        config-projects:
+          - zuul-org/zuul-test
