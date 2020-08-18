@@ -21,11 +21,9 @@
     success:
       github:
         status: 'success'
-      sqlreporter:
     failure:
       github:
         status: 'failure'
-      sqlreporter:
 
 - pipeline:
     name: gate
@@ -70,18 +68,15 @@
     start:
       github:
         status: 'pending'
-        status-url: "https://zuul.zuul-ci.org/zuul/status.html"
         comment: false
     success:
       github:
         status: 'success'
         merge: true
         comment: true
-      sqlreporter:
     failure:
       github:
         status: 'failure'
         comment: true
-      sqlreporter:
     window-floor: 20
     window-increase-factor: 2
