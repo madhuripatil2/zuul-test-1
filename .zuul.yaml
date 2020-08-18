@@ -85,27 +85,3 @@
       sqlreporter:
     window-floor: 20
     window-increase-factor: 2
-    
-- project:
-    name: zuul-org/zuul-test
-    check:
-      jobs:
-        - noop
-        - testjob
-        
-    gate:
-      jobs:
-        - Calculator-master
-   
-- job:
-    name: base1
-    parent: null
-    run: base-playbook.yaml
-
-- job:
-    name: Calculator-master
-    run: Calculator.yaml
-
-- job:
-    name: testjob
-    run: testjob.yaml
